@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden; /* Ensures no scrollbars appear */
+}
+
+#calculator {
+    font-family: "Inter", system-ui;
+    background-color: black;
+    border-radius: 15px;
+    width: 360px; /* Set a fixed width */
+    max-height: 80vh; /* Prevents overflow */
+    display: flex;
+    flex-direction: column; /* Ensures proper layout of display and keys */
+}
+
+#display {
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: right;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    cursor: auto;
+    font-weight: 200; 
+}
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 80px); /* Set column width to match button size */
+    gap: 10px;
+    padding: 20px; /* Adjusted padding for better fit */
+}
+
+button {
+    width: 80px; /* Fixed width */
+    height: 80px; /* Fixed height */
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    font-size: 1.5rem; /* Adjusted font size for better fit */
+    font-weight: lighter;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(0, 0%, 40%);
+}
+
+button:active {
+    background-color: hsl(0, 0%, 50%);
+}
+
+.operator-btn2 {
+    background-color: hsl(35, 100%, 55%);
+    font-size: 1.7rem; /* Adjusted font size for better fit */
+}
+
+.operator-btn2:hover {
+    background-color: hsl(35, 100%, 65%);
+}
+
+.operator-btn2:active {
+    background-color: hsl(35, 100%, 75%);
+}
+
+.operator-btn1 {
+    background-color: hsl(0, 0%, 60%);
+    color: #000;
+    font-size: 1.7rem; /* Adjusted font size for better fit */
+}
+
+.operator-btn1:hover {
+    background-color: hsl(0, 0%, 65%);
+}
+
+.operator-btn1:active {
+    background-color: hsl(0, 0%, 70%);
+}
+
+#sideHeading {
+    position: absolute;
+    color: gray;
+    font-family: "Inter", system-ui;
+    font-weight: 550;
+    margin: 10px;
+    margin-top: -20px;
+}
+
+#copyright {
+    width: 100%;
+    font-size: 0.7rem;
+    color: white;
+    text-align: center;
+    padding: 10px; 
+    position: relative;
+    bottom: 0;
+}
+
+@media (max-width: 600px) {
+    #sideHeading {
+        font-size: 1.5rem; 
+        margin-top: -40px;
+    }
+
+    #display {
+        font-size: 4rem; 
+        margin-left: -35px;
+    }
+
+    #keys {
+        padding: 10px;
+    }
+
+    button {
+        font-size: 1.3rem; 
+    }
+}
