@@ -36,6 +36,7 @@ document.getElementById('otp-form').addEventListener('submit', function(event) {
         // Show success message
         document.getElementById('otp-container').classList.add('hidden');
         document.getElementById('success-message').classList.remove('hidden');
+        window.location.href = "index.html";
     } else {
         alert('Invalid OTP. Please try again.');
     }
