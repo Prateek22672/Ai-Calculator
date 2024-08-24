@@ -1,0 +1,190 @@
+body {
+    font-family: "Inter", system-ui;
+    background-color: black;
+    margin: 0;
+}
+
+#sideHeading1 {
+    position: absolute;
+    color: gray;
+    font-family: "Inter", system-ui;
+    font-weight: 550;
+    margin: 10px;
+    font-size: 0.5rem;
+    top: 30px;
+    left: 30px;
+}
+
+#sideHeading2 {
+    position: absolute;
+    color: gray;
+    font-family: "Inter", system-ui;
+    font-weight: 550;
+    margin: 10px;
+    top: 40px;
+    left: 28px;
+}
+
+.mainHeading {
+    color: white;
+    margin-top: 60px;
+    font-size: 1.7rem;
+    font-weight: 550;
+    text-align: center;
+    position: relative;
+}
+
+#back {
+    position: absolute;
+    top: 30px; 
+    right: 35px;
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.68);
+    font-size: 1.5rem;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+#back:hover {
+    color: white;
+}
+
+.box {
+    display: block;
+    margin: auto;
+    width: 400px;
+    height: 70vh;
+    color: white;
+    font-size: 1.2rem;
+    border: 0.1px solid rgba(255, 255, 255, 0.372);
+    border-radius: 15px;
+    text-align: center;
+}
+
+.propertieBox {
+    text-align: left;
+    padding-left: 50px;
+    padding-top: 11px;
+}
+
+.propertieBox a {
+    color: white;
+    position: absolute;
+    margin-top: -80px;
+}
+
+#buy {
+    font-size: 1rem;
+    margin-top: 10px;
+    width: 300px;
+    height: 50px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: rgb(16 163 127);
+    font-weight: 525;
+}
+
+.tick {
+    display: flex;
+    width: 20px;
+}
+
+
+#copyright {
+    font-size: 0.7rem;
+    color: white;
+    text-align: center;
+    padding: 10px; 
+    position: relative;
+    bottom: 0;
+}
+
+@media (max-width: 600px) {
+
+    #sideHeading1 {
+        position: absolute;
+        color: gray;
+        font-family: "Inter", system-ui;
+        font-weight: 550;
+        margin: 10px;
+        font-size: 0.5rem;
+        top: 10px;
+        left: 1px;
+    }
+    
+    #sideHeading2 {
+        position: absolute;
+        color: gray;
+        font-family: "Inter", system-ui;
+        font-weight: 550;
+        margin: 10px;
+        top: 22px;
+        left: 0;
+    }
+
+    .mainHeading {
+        color: white;
+        margin-top: 85px;
+        font-size: 1.6rem;
+        font-weight: 550;
+        text-align: center;
+        position: relative;
+        margin-bottom: 50px;
+    }
+    
+    #back {
+        position: absolute;
+        top: 20px; 
+        right: 20px;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 1.5rem;
+        font-weight: 100;
+        cursor: pointer;
+    }
+
+    .box {
+        display: block;
+        margin: auto;
+        width: 300px;
+        height: 70vh;
+        color: white;
+        font-size: 1.2rem;
+        border: 0.1px solid rgba(255, 255, 255, 0.372);
+        text-align: center;
+        border-radius: 15px;
+    }
+
+    .propertieBox {
+        text-align: left;
+        font-size: 1rem;
+        padding-left: 26px;
+    }
+
+    #buy {
+        font-size: 1rem;
+        margin-top: 10px;
+        width: 270px;
+        height: 50px;
+        border-radius: 50px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        color: white;
+        background-color: rgb(16 163 127);
+        font-weight: 525;
+    }
+
+    .propertieBox a {
+        color: white;
+        position: absolute;
+        margin-top: 0px;
+    }
+    
+    
+}
