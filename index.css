@@ -46,7 +46,7 @@ button {
     background-color: hsl(0, 0%, 30%);
     color: white;
     font-size: 1.5rem; /* Adjusted font size for better fit */
-    font-weight: lighter;
+    font-weight: 500;
     cursor: pointer;
 }
 
@@ -85,7 +85,17 @@ button:active {
     background-color: hsl(0, 0%, 70%);
 }
 
-#sideHeading {
+#sideHeading1 {
+    position: absolute;
+    color: gray;
+    font-family: "Inter", system-ui;
+    font-weight: 550;
+    margin: 10px;
+    margin-top: -30px;
+    font-size: 0.5rem;
+}
+
+#sideHeading2 {
     position: absolute;
     color: gray;
     font-family: "Inter", system-ui;
@@ -105,9 +115,16 @@ button:active {
 }
 
 @media (max-width: 600px) {
-    #sideHeading {
-        font-size: 1.5rem; 
-        margin-top: -40px;
+
+    #sideHeading1 {
+        margin-top: -30px;
+        font-size: 0.5rem;
+        margin-left: 11px;
+    }
+    
+    #sideHeading2 {
+        margin-top: -30px;
+        margin-top: -20px;
     }
 
     #display {
